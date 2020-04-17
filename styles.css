@@ -249,11 +249,14 @@ iframe{
 #home_body_donate{
     margin-top: 10px;
     width:100%;
-    height: 250px;
-    background-image: url("pback.jpg");
-    background-size: 1000px 250px;
+    height: 300px;
+    background-image: url("bar2.jpg");
     background-color: rgb(255, 196, 196);
     border-radius: 30px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #home_body_donate_sup{
