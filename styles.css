@@ -182,7 +182,7 @@ button {
     display:block;
     height: 5px;
    /* background-color: rgb(255, 118, 118);*/
-    background: linear-gradient(to top, #008aff, #00ffe7);
+    background: linear-gradient(90deg, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
 
     position: absolute;
@@ -227,7 +227,9 @@ iframe{
 #home_body_donate{
     margin-top: 10px;
     width:100%;
-    height: 200px;
+    height: 250px;
+    background:black;
+    border-radius: 30px;
 }
 
 #home_body_donate_sup{
@@ -262,12 +264,113 @@ iframe{
     align-items: center;
 }
 
-#home_body_donate button:hover{
-    font-size: 20px;
-    cursor: pointer;
-    background-color: black;
-    color:white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(141, 141, 141, 0.19);
+/*-----------------button effect------------------*/
+
+.un a{
+    position: relative;
+    display: inline block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: red;
+    font-size: 30px;
+    text-decoration:none;
+    transition: 0.5s;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+.un a:hover{
+    background: red;
+    color: black;
+    box-shadow: 0 0 5px red,
+                0 0 25px red,
+                0 0 50px red;
+}
+
+.un a span{
+    position: absolute;
+    display: block;
+}
+
+.un a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, red);
+    animation: lol1 2s linear infinite;
+}
+
+@keyframes lol1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.un a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, red);
+    animation: lol2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes lol2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+.un a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, red);
+    animation: lol3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes lol3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+.un a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, red);
+    animation: lol4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes lol4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+
+/*-------------------------------------*/
+
+#home_body_donate h1{
+    color: white;
 }
 
 #home_body_bar{
