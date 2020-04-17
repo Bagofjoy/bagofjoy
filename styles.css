@@ -238,7 +238,7 @@ iframe{
     float: left;
     justify-content: center;
     align-items: center;
-    border-right: 3px solid #000000;
+    border-right: 10px solid white;
 }
 #home_body_donate_cash{
     width: 49.5%;
