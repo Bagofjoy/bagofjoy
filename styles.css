@@ -513,3 +513,17 @@ iframe{
     color:white;
     background-color: black;
 }
+
+
+
+/*------------------------------------------------About us------------------------------------------*/
+#who_are_we a{
+    text-decoration: none;
+    color: red;
+
+}
+
+#contact a{
+    text-decoration: none;
+
+}
