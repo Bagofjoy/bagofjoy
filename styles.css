@@ -181,7 +181,9 @@ button {
     content: '';
     display:block;
     height: 5px;
-    background-color: rgb(255, 118, 118);
+   /* background-color: rgb(255, 118, 118);*/
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
 
     position: absolute;
     top: 0;
