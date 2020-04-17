@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bag of Joy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="JIMMY">
+        <meta name="Description" content="JIMMY">
+        <meta name="author" content="Chris Zhou" />
+        <meta name="robots" content="noindex" />
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script src="script.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163790521-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-163790521-1');
+        </script>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="home_container">
+            <div id="home_header">
+                <div id="home_header_logo">
+                    <a href="index.html">
+                        <img id="logo" src="logo_extended_hr.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div id="home_head_social">
+                    <div id="home_head_social_text">
+                        <h2>Follow us on social media! <br>@bagofjoy.hk</h2>
+                    </div>
+                    <div id="home_head_social_icon">
+                        <a href="https://www.instagram.com/bagofjoy.hk/" target="_blank">
+                            <img src="Asset 3.png" alt="IG" class="icon">
+                        </a>
+                        <a href="https://www.facebook.com/bagofjoy.hk/" target="_blank">
+                            <img src="Asset 4.png" alt="FB" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="home_nav">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="instructions.html">How to make a Bag of Joy?</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>  
+            </div>
+            <div id="home_body">
+                <div id="home_body_top">
+                    <div id="home_body_top_left">
+                        <div id="home_body_top_left_intro">
+                            <h4>The Bag of Joy Project is a service project start-up by 2 Diocesan Boys' School students who want to deliver joy to lives of those who are facing a tough time during the epidemic by delivering Bags of Joy to them. We are asking for donations in the form of supplies. The collected Bag of Joy will be distributed to children and elderlies in need through community centres and direct deliveries.</h4>
+                        </div>
+                        <div id="home_body_top_left_donate">
+                            <h1>
+                                Do you want to bring warmth to children and the elderlies in need? <br><a href="https://forms.gle/3SqoxLwVVSTcqW346" style="color: #ff1e1e">Sign up to donate Bags of Joy!</a>
+                            </h1>
+                            <a href="https://forms.gle/3SqoxLwVVSTcqW346"><button><b>Donate Bags of Joy </b><br> (Google Form)</button></a>
+                        </div>
+                    </div>
+                    <div id="home_body_top_right">
+                        <img id="poster" src="Bag of Joy.jpg" alt="Main Promotional Poster" class="poster">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+
+                        <script>
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+                        
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('poster');
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                            modal.style.display = "none";
+                        }
+                        </script>
+                    </div>
+                </div>
+                <div id="home_body_bar">
+                    <div id="home_body_bar_text">
+                        <h1>0 boxes received out of the goal of 1000 boxes (0%)</h1>
+                    </div>
+                    <div class="meter">
+                        <span style="width: 0.5%"></span>
+                    </div>
+                </div>
+                <div id="home_body_bottom">
+                    <div id="home_body_bottom_ngo">
+                        Our partners
+                    </div>
+                    <div id="home_body_bottom_vid">
+                        <iframe width="495" height="299" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="home_footer">
+                Contact us!  &emsp; &emsp; &emsp; Facebook/Instagram: @bagofjoy.hk &emsp; &emsp; &emsp; Email: bagofjoy.hk@gmail.com &emsp; &emsp; &emsp; Are you bored? &ensp; <a href="Dino.html" target="_blank"><button>Chrome Dino Game</button></a>
+            </div>
+        </div>
+    </body>
+</html>
