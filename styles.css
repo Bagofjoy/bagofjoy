@@ -884,14 +884,33 @@ iframe{
 /*------------------------------------------------Blog------------------------------------------*/
 
 /*------------------------------------------------About us------------------------------------------*/
+#about_body{
+    height: 1300px;
+}
+
 #who_are_we a{
     text-decoration: none;
     color: red;
-
 }
 
 #who_are_we h1{
-    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#who_are_we h2{
+    text-align: justify;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#who_are_we h3{
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 50px;
 }
 
 #contact a{
