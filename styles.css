@@ -783,11 +783,7 @@ iframe{
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .sbs:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .sbh:hover .flip-card-inner {
+  .sbs:hover .flip-card-inner, .sbs:active .flip-card-inner, .sbh:hover .flip-card-inner, .sbh:active .flip-card-inner {
     transform: rotateY(180deg);
   }
   
