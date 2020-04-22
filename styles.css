@@ -537,6 +537,7 @@ iframe{
 #home_body_bar_text h1{
     text-align: center;
     line-height: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .meter { 
