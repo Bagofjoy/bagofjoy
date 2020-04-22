@@ -28,6 +28,35 @@ a{
     transition-duration: 0.5s;
 }*/
 
+
+/*-------------------prompt-----------------*/
+
+.prompt{
+    position: fixed;
+    top: 50%;
+    left: -100px;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 65px;
+    background:linear-gradient(90deg,#ffafbd, #ffc3a0);
+    transform: rotate(-90deg);
+}
+
+.prompt:hover{
+    background:linear-gradient(270deg,#de6262, #ffb88c);
+}
+
+.prompt a{
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+
 .b2{
     --y: -25;
     --x: 0;
