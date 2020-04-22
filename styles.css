@@ -704,9 +704,16 @@ iframe{
     margin-top: 30px;
 }
 
+.filler{
+    float: left;
+    width: 2%;
+    height: 100%;
+    position: relative;
+}
+
 .sbs{
     float: left; 
-    width: 33.3%;
+    width: 32%;
     height: 100%;
     position: relative;
     background-color: transparent;
@@ -717,7 +724,7 @@ iframe{
 
 .sbh{
     float: right; 
-    width: 33.3%;
+    width: 32%;
     height: 49.5%;
     position: relative;
     background-color: transparent;
@@ -747,7 +754,7 @@ iframe{
 #cp{
     background-image: url("cp.jpg");
     background-size: 100%;
-    background-position-y: -100px;
+    background-position-y: -95px;
 }
 
 #ep{
