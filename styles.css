@@ -27,7 +27,7 @@ a{
 
 /*-------------------prompt-----------------*/
 
-.prompt{
+.prompt a{
     position: fixed;
     top: 50%;
     left: -100px;
@@ -40,9 +40,13 @@ a{
     line-height: 65px;
     background:linear-gradient(90deg,#ffafbd, #ffc3a0);
     transform: rotate(-90deg);
+    transition: 1s;
+    border: 2px solid blue;
 }
 
-.prompt:hover{
+.prompt a:hover{
+    transition: 1s;
+    color: white;
     background:linear-gradient(270deg,#de6262, #ffb88c);
 }
 
@@ -50,6 +54,7 @@ a{
     text-decoration: none;
     font-weight: 900;
     color: rgb(0, 0, 0);
+    transition: 1s;
 }
 
 
@@ -377,8 +382,10 @@ a{
 
 #home_body_vid{
     margin: auto;
-    width: 70%;
-    height: 350px;
+    width: 60%;
+    height: 400px;
+    border: 2px solid blue;
+    align-content: center;
 }
 
 iframe{
@@ -399,7 +406,7 @@ iframe{
 #home_body_donate{
     margin-top: 10px;
     width:100%;
-    height: 300px;
+    height: 250px;
     background-image: url("bar2.jpg");
     background-color: rgb(255, 196, 196);
     border-radius: 30px;
@@ -410,32 +417,27 @@ iframe{
 }
 
 #home_body_donate_sup{
-    width: 49.5%;
-    height: 100%;
-    float: left;
     justify-content: center;
     align-items: center;
     border-right: 10px solid white;
 }
-#home_body_donate_cash{
-    width: 49.5%;
-    height: 100%;
-    float: right;
-    justify-content: center;
-    align-items: center;
+
+#filler{
+    height: 30px;
+    width: 100%;
 }
 
 .abcap{
     width:100%;
-    height:50%;
+    height:85px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     line-height: 30px;
 }
 .un{
     width:100%;
-    height: 40%;
+    height:100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,7 +450,8 @@ iframe{
     display: inline block;
     padding: 25px 30px;
     margin: 40px 0;
-    color: red;
+    color: white;
+    background: red;
     font-size: 30px;
     text-decoration:none;
     transition: 0.5s;
@@ -460,91 +463,11 @@ iframe{
 }
 
 .un a:hover{
-    background: red;
-    color: white;
+    background: rgb(255, 214, 214);
+    color: black;
     box-shadow: 0 0 5px red,
                 0 0 25px red,
                 0 0 50px red;
-}
-
-.un a span{
-    position: absolute;
-    display: block;
-}
-
-.un a:hover span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(94, 255, 0));
-    animation: lol1 4s linear infinite;
-}
-
-@keyframes lol1{
-    0%{
-        left: -100%;
-    }
-    50%, 100%{
-        left: 100%;
-    }
-}
-
-.un a:hover span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, rgb(94, 255, 0), rgb(0, 255, 221));
-    animation: lol2 4s linear infinite;
-    animation-delay: 1s;
-}
-
-@keyframes lol2{
-    0%{
-        top: -100%;
-    }
-    50%, 100%{
-        top: 100%;
-    }
-}
-
-.un a:hover span:nth-child(3){
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, rgb(0, 255, 221), rgb(98, 0, 255));
-    animation: lol3 4s linear infinite;
-    animation-delay: 2s;
-}
-
-@keyframes lol3{
-    0%{
-        right: -100%;
-    }
-    50%, 100%{
-        right: 100%;
-    }
-}
-
-.un a:hover span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, rgb(98, 0, 255), rgb(255, 0, 0));
-    animation: lol4 4s linear infinite;
-    animation-delay: 3s;
-}
-
-@keyframes lol4{
-    0%{
-        bottom: -100%;
-    }
-    50%, 100%{
-        bottom: 100%;
-    }
 }
 
 /*-------------------------------------*/
@@ -754,11 +677,22 @@ iframe{
 #bposr a{
     text-align: center;
     font-size: 30px;
-    margin: 50px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 5px;
     background-color: red;
     color: white;
     border: 1px solid black;
+    display: block;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#bposr a:hover{
+    color: red;
+    background-color:white;
+    transition: 1s;
 }
 
 
