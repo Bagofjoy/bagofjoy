@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bag of Joy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="JIMMY">
+        <meta name="Description" content="JIMMY">
+        <meta name="author" content="Chris Zhou" />
+        <meta name="robots" content="noindex" />
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script src="script.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163790521-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-163790521-1');
+        </script>
+        <script src="print.js"></script>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <div class="prompt">
+            <a href="https://forms.gle/3SqoxLwVVSTcqW346">
+                Contribute
+            </a>
+        </div>
+        <div id="home_container">
+            <div id="home_header">
+                <div id="home_header_logo">
+                    <a href="index.html">
+                        <img id="logo" src="logo_extended_hr.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div id="home_head_social">
+                    <div id="home_head_social_text">
+                        <h2><span class="spfont">Follow us on social media! <br>@bagofjoy.hk</span></h2>
+                    </div>
+                    <div id="home_head_social_icon">
+                        <a href="https://www.instagram.com/bagofjoy.hk/" target="_blank">
+                            <img src="Asset 3.png" alt="IG" class="icon">
+                        </a>
+                        <a href="https://www.facebook.com/bagofjoy.hk/" target="_blank">
+                            <img src="Asset 4.png" alt="FB" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="home_nav">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="instructions.html"><span style="color:red">How to make a Bag of Joy?</span></a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>  
+            </div>
+            <div id="in_body">
+                <div id="in">
+                    <div id="in_intro"></div>
+                    <div id="in_intro_txt">Packing a <span style="color:red">bag of joy</span> is very simple.</div>
+                    <div id="in_text">Pick two items from each of the three catagories. Six items total.</div>
+                </div>
+                <div id="bpos">
+                    <div id="bposl">
+                        
+                    </div>
+                    <div id="bposr">
+                        <p><a href="Ins.pdf" download target="_blank">Download pdf</a></p>
+                        <p><a href="javascript:printJS('docs/Ins.pdf');">Print pdf</a></p>
+                        <p><a href="Ins.pdf" download target="_blank">Email pdf</a></p>
+                    </div>
+                </div>
+                <div id="afterpos">
+                    <ol class="coollist">
+                        <li class="item">
+                          <h2 class="headline">All items must be new</h2><span></span>
+                        </li>
+                        <li class="item">
+                          <h2 class="headline">The bag</h2><span>A complimentary environmental bag will be given for you to pack the supplies at the collection station.</span>
+                        </li>
+                        <li class="item">
+                          <h2 class="headline">Each Bag of Joy contains 6 pieces of supply, 2 from each category.</h2><span>For a comprehensive list of what to donate and what not to, <a href="fullin.pdf" download target="_blank" style="text-decoration: none; color:red;">click here to download.</a></span>
+                        </li>
+                      </ol>
+                </div>
+            </div>
+            <div id="home_footer">
+                <strong>Contact us!</strong>        Facebook/Instagram: @bagofjoy.hk       Email: bagofjoy.hk@gmail.com       Are you bored?   <a href="Dino.html" target="_blank"><button>Chrome Dino Game</button></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+    </body>
+</html>
