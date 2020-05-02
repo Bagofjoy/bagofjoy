@@ -41,7 +41,6 @@ a{
     background:linear-gradient(90deg,#ffafbd, #ffc3a0);
     transform: rotate(-90deg);
     transition: 1s;
-    border: 2px solid blue;
 }
 
 .prompt a:hover{
@@ -384,7 +383,6 @@ a{
     margin: auto;
     width: 60%;
     height: 400px;
-    border: 2px solid blue;
     align-content: center;
 }
 
